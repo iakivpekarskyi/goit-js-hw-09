@@ -15,7 +15,7 @@ function onFormSubmit(event) {
   let step = Number(event.target.step.value);
   let amount = Number(event.target.amount.value);
 
-  for (let position = 1; position < amount; position += 1) {
+  for (let position = 0; position < amount; position += 1) {
     createPromise(position, delay) 
       .then(({ position, delay }) => {
         setTimeout(() => {

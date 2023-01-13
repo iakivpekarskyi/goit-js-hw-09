@@ -56,7 +56,7 @@ function convertMs(ms) {
 startBtn.addEventListener("click", () => {
   timerId = setInterval(() => {
     const currentTime = Date.now();
-    deltaTime = startTime - currentTime;
+    const deltaTime = startTime - currentTime;
     const textTime = convertMs(deltaTime);
 
     days.innerText = textTime.daysLeft;
