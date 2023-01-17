@@ -55,6 +55,7 @@ function convertMs(ms) {
 
 startBtn.addEventListener("click", () => {
   timerId = setInterval(() => {
+    startBtn.disabled = true;
     const currentTime = Date.now();
     const deltaTime = startTime - currentTime;
     const textTime = convertMs(deltaTime);
